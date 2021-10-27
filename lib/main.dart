@@ -1,3 +1,4 @@
+import 'package:alarm_test/ft.dart';
 import 'package:alarm_test/principal.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         ),
         title: 'Mis Tareas',
         initialRoute: 'principal',
-        routes: {'principal': (BuildContext context) => Principal()});
+        routes: {
+          'principal': (BuildContext context) => Principal(),
+          // 'principal': (BuildContext context) => FormT(),
+        });
   }
 }
